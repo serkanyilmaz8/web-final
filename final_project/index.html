@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Management System</title>
+    <!-- CSS connection -->
+    <link rel="stylesheet" href="style.css">
+    <!-- JS connection -->
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <header>
+        <h1>Student Management System</h1>
+    </header>
+
+    <main>
+        <!-- Lecture adding and selection section -->
+        <section id="lecture-management">
+            <h2>Add or Select Lecture</h2>
+            <form id="lecture-form">
+                <input type="number" id="lecture-id" placeholder="Enter Lecture ID">
+                <input type="text" id="lecture-name" placeholder="Enter Lecture Name (optional)">
+                <input type="number" id="credit" placeholder="Lecture credit" step="1">
+                <select id="grading-scale">
+                    <option value="10">10-Point Scale</option>
+                    <option value="7">7-Point Scale</option>
+                </select>
+                <button type="submit">Add/Select Lecture</button>
+            </form>
+        </section>
+
+
+        <!-- Lecture information display area -->
+        <section id="latest-lecture">
+            <h2>Lecture Information</h2>
+            <div id="latest-lecture-title"></div> 
+            <div id="latest-lecture-info">
+                <!-- Dynamic content, this section will create with js according inputs  -->
+            </div>
+        </section>
+
+        <!-- Adding new student -->
+        <section id="add-student">
+            <h2>Add/Edit Student</h2>
+            <form id="student-form">
+                <input type="text" id="student-name" placeholder="Student Name">
+                <input type="text" id="student-id" placeholder="Student ID">
+                <input type="number" id="midterm-grade" placeholder="Midterm Grade" step="1">
+                <input type="number" id="final-grade" placeholder="Final Grade" step="1">
+                <input type="number" id="lecture-id1" placeholder="Enter Lecture ID">
+                <button type="submit">Add/Edit Student</button>
+            </form>
+        </section>
+
+        
+
+        <!-- Section for student searching by student name -->
+        <section id="search-student">
+            <h2>Search Student</h2>
+            <form id="search-form">
+                <input type="text" id="search-query" placeholder="Enter Student Name">
+                <button type="submit">Search</button>
+            </form>
+            <div id="search-results">
+                <!-- Search results will be displayed here -->
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>© 2023 Student Management System</p>
+    </footer>
+
+   
+</body>
+</html>
